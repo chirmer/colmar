@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.25em;
 }
 
@@ -114,8 +114,8 @@ header {
   height: 64px;
 }
 
-header div.content-container, section {
-  padding: 0 1.5rem;
+header div.content-container, section, main {
+  padding: 0 24px;
 }
 
 header img {
@@ -148,7 +148,7 @@ nav a:active {
 /* ---------- Banner ---------- */
 
 section figure.flex img {
-  margin: 2rem 1.5rem 2rem 0;
+  margin: 32px 24px 32px 0;
 }
 
 figcaption {
@@ -163,12 +163,57 @@ figcaption span.btn {
   max-width: 50%;
 }
 
+figcaption a {
+  color: #f15213;
+}
+
+figcaption a:hover {
+  color: #06b5c8;
+  transition: color 200ms linear 0ms;
+  cursor: pointer;
+}
+
 /* ---------- Main ---------- */
 
 main {
-  padding: 32px 0;
+  padding: 32px 24px;
 }
 
-main div.direction-column h1, main div.direction-column p {
-  margin: 24px 0 0 0;
+main article h1, main article p {
+  margin-top: 24px;
+}
+
+main aside {
+  width: 40%;
+  margin-left: 24px;
+  margin-right: 0;
+}
+
+main aside figure {
+  padding: 16px;
+}
+
+main aside figure img {
+  max-width: 35%;
+  height: auto;
+  overflow: hidden;
+  background-size: cover;
+  margin-right: 16px;
+}
+
+main aside figcaption {
+  width: 65%;
+}
+
+aside p {
+  margin: 8px 0;
+}
+
+main aside figure:last-child {
+  background-color: #303577;
+  color: white;
+}
+
+main aside figure:first-child {
+  padding-top: 0;
 }
