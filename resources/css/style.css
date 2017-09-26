@@ -4,11 +4,21 @@ html {
   font-size: 18px;
   font-family: 'PT Sans', Verdana, sans-serif;
   color: #2F343B;
+  line-height: 1.25em;
 }
 
 h1, h2, h3, header span {
   font-family: 'PT Serif', Georgia, serif;
   font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.25em;
+}
+
+h2 {
+  font-size: 1.75em;
 }
 
 .content-container {
@@ -21,8 +31,20 @@ h1, h2, h3, header span {
   display: flex;
 }
 
+.direction-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .items-center {
@@ -35,17 +57,30 @@ h1, h2, h3, header span {
 
 .btn {
   background-color: #303577;
-  padding: 10px 20px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  padding: 8px 20px;
   color: white;
+  text-align: center;
 }
 
 .btn:hover {
   cursor: pointer;
   background-color: #06B5C8;
   transition: background-color 200ms linear;
+  color: white;
+}
+
+.btn:active {
+  background-color: #F15213;
+}
+
+.border-rounded {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.bg-gray {
+  background-color: #d1e3fa;
 }
 
 /* ---------- Header ---------- */
@@ -55,7 +90,7 @@ header {
   height: 64px;
 }
 
-header div.content-container {
+header div.content-container, section {
   padding: 0 24px;
 }
 
@@ -74,4 +109,30 @@ header span:last-child {
 
 nav a {
   margin: 0 0 0 16px;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: #06b5c8;
+  transition: color 200ms linear;
+}
+
+/* ---------- Banner ---------- */
+
+section figure.flex img {
+  max-width: 60%;
+  background-size: cover;
+  margin: 32px 24px 32px 0;
+}
+
+figcaption {
+  line-height: 1.25em;
+}
+
+figcaption p {
+  margin: 24px 0;
+}
+
+figcaption a.btn {
+  max-width: 50%;
 }
