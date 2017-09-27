@@ -217,3 +217,36 @@ main aside figure:last-child {
 main aside figure:first-child {
   padding-top: 0;
 }
+
+/* ---------- Courses ---------- */
+
+div.bg-gray div.direction-column h1 {
+  margin: 32px auto 0 auto;
+}
+
+div.bg-gray div.content-container.direction-column {
+  padding: 0 40px 32px 40px;
+}
+
+.course img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.course {
+  margin: 32px;
+  max-width: 330px;
+  align-items: stretch;
+}
+
+.bg-white {
+  background-color: white;
+  padding: 16px 16px 24px 16px;
+}
+
+.smallcaps {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 8px 0;
+}
