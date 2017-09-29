@@ -114,7 +114,7 @@ header {
   height: 64px;
 }
 
-header div.content-container, section, main {
+header div.content-container, section, main, #info {
   padding: 0 24px;
 }
 
@@ -179,21 +179,21 @@ main {
   padding: 32px 24px;
 }
 
-main article h1, main article p {
+article h1, article h2, main article p {
   margin-top: 24px;
 }
 
-main aside {
+aside {
   width: 40%;
   margin-left: 24px;
   margin-right: 0;
 }
 
-main aside figure {
+aside figure {
   padding: 16px;
 }
 
-main aside figure img {
+aside figure img {
   max-width: 35%;
   height: auto;
   overflow: hidden;
@@ -201,7 +201,7 @@ main aside figure img {
   margin-right: 16px;
 }
 
-main aside figcaption {
+aside figcaption {
   width: 65%;
 }
 
@@ -209,7 +209,7 @@ aside p {
   margin: 8px 0;
 }
 
-main aside figure:last-child {
+.bg-blue {
   background-color: #303577;
   color: white;
 }
@@ -220,11 +220,11 @@ main aside figure:first-child {
 
 /* ---------- Courses ---------- */
 
-div.bg-gray div.direction-column h1 {
+.bg-gray .direction-column h1, .flex .flex.content-container h1 {
   margin: 32px auto 0 auto;
 }
 
-div.bg-gray div.content-container.direction-column {
+.bg-gray .content-container.direction-column {
   padding: 0 40px 32px 40px;
 }
 
@@ -249,4 +249,19 @@ div.bg-gray div.content-container.direction-column {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 8px 0;
+}
+
+/* ---------- Thesis ---------- */
+
+.flex.direction-column h1 {
+  margin: 32px auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+article h2 {
+  margin-bottom: 8px;
 }
