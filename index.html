@@ -81,7 +81,7 @@
       </div>
     </main>
 
-    <div class="flex bg-gray"> <!-- Gray background -->
+    <div id="learn" class="flex bg-gray"> <!-- Gray background -->
       <div class="flex content-container direction-column">
         <h1>Start learning</h1>
         <div class="flex justify-between"> <!-- Row 1 -->
@@ -90,9 +90,7 @@
             <div class="flex direction-column bg-white">
               <h2>Software engineering</h2>
               <span class="smallcaps">Courses</span>
-              <p>
-                Web Development, Mobile Development, iOT, APIs
-              </p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
             </div>
           </div>
           <div class="flex direction-column course">
@@ -111,9 +109,7 @@
             <div class="flex direction-column bg-white">
               <h2>Design</h2>
               <span class="smallcaps">Courses</span>
-              <p>
-                User Experience Design, User Research, Experience Design
-              </p>
+              <p>User Experience Design, User Research, Experience Design</p>
             </div>
           </div>
         </div>
@@ -152,38 +148,50 @@
       </div>
     </div>
 
-    <div class="flex direction-column"> <!-- Information -->
-      <h1>Thesis exhibit</h1>
-      <div id="info" class="flex content-container">
-        <article class="flex direction-column width-60 justify-start"> <!-- Large article -->
-          <video src="resources/videos/thesis.mp4" controls="true"
-          class="border-rounded"></video>
-          <h2>Reimagine urban</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
-        <aside class="flex direction-column"> <!-- Side articles -->
-          <figure class="flex items-center border-rounded bg-blue">
-            <img src="resources/images/information-orientation.jpg" alt="Orientation"
-            class="border-rounded img-cover">
-            <figcaption class="flex direction-column">
-              <h2>Orientation Date</h2>
-              <p>Tuesday 10/11 &amp; Wednesday 10/12: 8am-3pm</p>
-              <a>Read more</a>
-            </figcaption>
-          </figure>
-          <figure class="flex items-center">
-            <img src="resources/images/information-campus.jpg" alt="Campus"
-            class="border-rounded img-cover">
-            <figcaption class="flex direction-column">
-              <h2>Our Campus</h2>
-              <p>Find which campus is close by you</p>
-              <a>Read more</a>
-            </figcaption>
-          </figure>
-        </aside>
+    <!-- Thesis -->
+    <div id="thesis" class="flex"> <!-- Full width -->
+      <div class="flex content-container direction-column"> <!-- Container width -->
+        <h1>Thesis Exhibit</h1>
+        <div class="flex"> <!-- Content -->
+          <article class="flex direction-column width-60"> <!-- Left column -->
+            <video src="resources/videos/thesis.mp4" controls class="img-fullwidth">This video cannot
+              play on your device.</video>
+            <h2>Reimagine urban</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+          <aside class="flex direction-column"> <!-- Right column -->
+            <figure class="flex items-center border-rounded bg-blue">
+              <img src="resources/images/thesis-fisma.jpg" class="border-rounded img-cover">
+              <div class="flex direction-column">
+                <h2>Fisma: Design &amp; Prototype</h2>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+            </figure>
+            <figure class="flex items-center">
+              <img src="resources/images/thesis-now-and-then.jpg" class="border-rounded img-cover">
+              <div class="flex direction-column">
+                <h2>Now &amp; then</h2>
+                <p>Research study about New York</p>
+              </div>
+            </figure>
+          </aside>
+        </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="flex">
+      <div class="flex content-container justify-between">
+        <p>&copy; Colmar Academy. All rights reserved</p>
+        <div class="flex">
+          <a>Terms</a>
+          <a>Privacy</a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
