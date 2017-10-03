@@ -7,6 +7,10 @@ html, body {
   line-height: 1.25em;
 }
 
+#mobile-nav {
+  display: none;
+}
+
 h1, h2, header span {
   font-family: 'PT Serif', Georgia, serif;
   font-weight: bold;
@@ -286,7 +290,7 @@ footer a:first-child {
   margin-right: 16px;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (min-width: 726px; max-width: 920px) {
 
   h1 {
     font-size: 1.8rem;
@@ -304,6 +308,103 @@ footer a:first-child {
 
 @media only screen and (max-width: 725px) {
 
-  
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  figure {
+    flex-direction: column;
+  }
+
+  section.contentcontainer figure img, aside {
+    width: 100%;
+  }
+
+  section figure.flex img, figure, main {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+
+  section {
+    padding: 0;
+  }
+
+  article {
+    display: none!important;
+  }
+
+  header div.content-container {
+    padding: 0;
+  }
+
+  figcaption h1, figcaption h3 {
+    text-align: center;
+  }
+
+  figcaption {
+    align-items: center;
+    padding-bottom: 32px;
+  }
+
+  aside figure img {
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+    background-size: auto;
+    margin: 0;
+  }
+
+  aside figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  aside.flex.direction-column {
+    margin: 0;
+    padding: 0;
+  }
+
+  .width-60 {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .bg-blue {
+    background-color: white;
+    color: #2F343B;
+  }
+
+  #learn .justify-between {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  #learn h1 {
+    text-align: center;
+  }
+
+  #learn img, #learn span, #learn p {
+    display: none;
+  }
+
+  #learn h2 {
+    margin: 0;
+  }
+
+  #learn .bg-white {
+    padding: 16px 16px 24px 16px;
+    margin: 8px 16px;
+  }
 
 }
