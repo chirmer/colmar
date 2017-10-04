@@ -3,199 +3,204 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colmar Academy</title>
+    <title>Colmar Academy 2</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700|PT+Sans:400,700|PT+Serif:400i,700" rel="stylesheet">
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
 
-    <header class="flex items-center"> <!-- Nav bar full width -->
-      <div id="desktop-nav" class="flex content-container justify-between"> <!-- Content container -->
-        <div class="flex items-center"> <!-- Logo + wordmark -->
-          <img src="resources/images/ic-logo.svg" aria-disabled="true">
-          <span class="uppercase">Colmar</span><span class="uppercase">Academy</span>
+    <header class="flex bg-white"> <!-- Nav header full-width bg -->
+      <div class="flex container justify-between align-center"> <!-- Contains page width -->
+        <div class="flex align-center"> <!-- Logo + name -->
+          <img src="resources/images/ic-logo.svg" alt="Colmar Academy">
+          <p class="uppercase">Colmar<span>Academy</span></p>
         </div>
-        <nav class="flex items-center"> <!-- Nav menu -->
+        <nav class="flex align-center justify-end small"> <!-- Nav links -->
           <a>On campus</a>
           <a>Online</a>
           <a>For companies</a>
-          <a class="btn border-rounded">Sign in</a>
+          <a class="btn rounded">Sign in</a>
         </nav>
       </div>
-      <nav id="mobile-nav" class="flex">
-        <img src="resources/images/ic-logo.svg" aria-disabled="true">
-        <img src="resources/images/ic-on-campus.svg" aria-disabled="true">
-        <img src="resources/images/ic-online.svg" aria-disabled="true">
-        <img src="resources/images/ic-login.svg" aria-disabled="true">
-      </nav>
     </header>
 
-    <div class="flex items-center bg-gray"> <!-- banner background full width -->
-      <section class="flex content-container items-center"> <!-- Image + text -->
-        <figure class="flex items-center">
-          <img src="resources/images/banner.jpg" alt="Students studying outdoors"
-          class="border-rounded width-60 img-cover">
-          <figcaption class="flex direction-column">
-            <h1>Learn something new every day.</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            <span class="btn border-rounded">Start here</span>
-          </figcaption>
-        </figure>
-      </section>
-    </div>
+    <!-- Banner -->
+    <section id="banner" class="flex bg-pale">
+      <div class="flex container align-center"> <!-- Container -->
+        <img src="resources/images/banner.jpg" class="rounded" alt="Students studying">
+        <div class="flex column"> <!-- Banner text -->
+          <h1>Learn something new every day</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="btn rounded small">Start here</a>
+        </div>
+      </div>
+    </section>
 
-    <main class="flex"> <!-- Information -->
-      <div class="flex content-container">
-        <article class="flex direction-column width-60 justify-start"> <!-- Large article -->
-          <img src="resources/images/information-main.jpg" alt="Student reading"
-          class="border-rounded img-cover img-fullwidth">
+    <!-- Content + aside -->
+    <section id="info" class="flex">
+      <div class="flex container">
+        <div class="flex column"> <!-- Left column -->
+          <img src="resources/images/information-main.jpg" class="rounded" alt="Man reading book">
           <h1>It doesn't hurt to keep practicing</h1>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.”</p>
-          <p class="it-serif">- Emanuel, Sr Strategist at Hiring.com</p>
-        </article>
-        <aside class="flex direction-column"> <!-- Side articles -->
-          <figure class="flex items-center">
-            <img src="resources/images/information-orientation.jpg" alt="Orientation"
-            class="border-rounded img-cover">
-            <figcaption class="flex direction-column">
-              <h2>Orientation Date</h2>
-              <p>Tuesday 10/11 &amp; Wednesday 10/12: 8am-3pm</p>
-              <a>Read more</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+            nunc ac purus aliquet tincidunt in id erat. Nulla facilisi. Maecenas
+            aliquam auctor odio.
+          </p>
+          <p>- Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+        <aside class="flex column"> <!-- Right column -->
+          <figure class="flex align-center">
+            <img src="resources/images/information-orientation.jpg" class="rounded" alt="Orientation">
+            <figcaption class="flex column">
+              <h2>Orientation dates</h2>
+              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+              <a class="btn rounded small">Read more</a>
             </figcaption>
           </figure>
-          <figure class="flex items-center">
-            <img src="resources/images/information-campus.jpg" alt="Campus"
-            class="border-rounded img-cover">
-            <figcaption class="flex direction-column">
-              <h2>Our Campus</h2>
-              <p>Find which campus is close by you</p>
-              <a>Read more</a>
+          <figure class="flex align-center">
+            <img src="resources/images/information-campus.jpg" class="rounded" alt="Campus">
+            <figcaption class="flex column">
+              <h2>Our campus</h2>
+              <p>Find which campus is close to you</p>
+              <a class="btn rounded small">Read more</a>
             </figcaption>
           </figure>
-          <figure class="flex items-center border-rounded bg-blue">
-            <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack"
-            class="border-rounded img-cover">
-            <figcaption class="flex direction-column">
+          <figure class="flex align-center bg-pale rounded">
+            <img src="resources/images/information-guest-lecture.jpg" class="rounded" alt="Guest lecture">
+            <figcaption class="flex column">
               <h2>Our guest lecture</h2>
-              <p>Join a keynote with Oliver Sack about music in medical treatment.</p>
-              <a>Read more</a>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a class="btn rounded small">Read more</a>
             </figcaption>
           </figure>
         </aside>
       </div>
-    </main>
+    </section>
 
-    <div id="learn" class="flex bg-gray"> <!-- Gray background -->
-      <div class="flex content-container direction-column">
+    <!-- Courses -->
+    <section id="courses" class="flex bg-pale">
+      <div class="flex container column align-center">
         <h1>Start learning</h1>
-        <div class="flex justify-between"> <!-- Row 1 -->
-          <div class="flex direction-column course">
-            <img src="resources/images/course-software.jpg" alt="Software Course">
-            <div class="flex direction-column bg-white">
+        <div class="flex justify-between"> <!-- Courses -->
+          <figure class="flex column">
+            <img src="resources/images/course-software.jpg" class="rounded"
+            alt="Software engineering">
+            <figcaption class="flex column bg-white">
               <h2>Software engineering</h2>
-              <span class="smallcaps">Courses</span>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
-            </div>
-          </div>
-          <div class="flex direction-column course">
-            <img src="resources/images/course-computer-art.jpg" alt="Computer Art Course">
-            <div class="flex direction-column bg-white">
+              <a class="small uppercase">Courses</a>
+              <p>
+                Web Development, Mobile Development, iOT, APIs
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-computer-art.jpg" class="rounded"
+            alt="Computer art">
+            <figcaption class="flex column bg-white">
               <h2>Computer art</h2>
-              <span class="smallcaps">Courses</span>
+              <a class="small uppercase">Courses</a>
               <p>
                 Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual
                 Effects, Computer Animation
               </p>
-            </div>
-          </div>
-          <div class="flex direction-column course">
-            <img src="resources/images/course-design.jpg" alt="Design Course">
-            <div class="flex direction-column bg-white">
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-design.jpg" class="rounded"
+            alt="Design">
+            <figcaption class="flex column bg-white">
               <h2>Design</h2>
-              <span class="smallcaps">Courses</span>
-              <p>User Experience Design, User Research, Experience Design</p>
-            </div>
-          </div>
+              <a class="small uppercase">Courses</a>
+              <p>
+                User Experience Design, User Research, Visual Design
+              </p>
+            </figcaption>
+          </figure>
         </div>
-        <div class="flex justify-between"> <!-- Row 2 -->
-          <div class="flex direction-column course">
-            <img src="resources/images/course-data.jpg" alt="Data Course">
-            <div class="flex direction-column bg-white">
+        <div class="flex justify-between">
+          <figure class="flex column">
+            <img src="resources/images/course-data.jpg" class="rounded"
+            alt="Data">
+            <figcaption class="flex column bg-white">
               <h2>Data</h2>
-              <span class="smallcaps">Courses</span>
+              <a class="small uppercase">Courses</a>
               <p>
                 Data Science, Big Data, SQL, Data Visualization
               </p>
-            </div>
-          </div>
-          <div class="flex direction-column course">
-            <img src="resources/images/course-business.jpg" alt="Business Course">
-            <div class="flex direction-column bg-white">
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-business.jpg" class="rounded"
+            alt="Business">
+            <figcaption class="flex column bg-white">
               <h2>Business</h2>
-              <span class="smallcaps">Courses</span>
+              <a class="small uppercase">Courses</a>
               <p>
-                Product Development, Business Development, Startups
+                Product Development, Business Development, Startup
               </p>
-            </div>
-          </div>
-          <div class="flex direction-column course">
-            <img src="resources/images/course-marketing.jpg" alt="Marketing Course">
-            <div class="flex direction-column bg-white">
+            </figcaption>
+          </figure>
+          <figure class="flex column">
+            <img src="resources/images/course-marketing.jpg" class="rounded"
+            alt="Marketing">
+            <figcaption class="flex column bg-white">
               <h2>Marketing</h2>
-              <span class="smallcaps">Courses</span>
+              <a class="small uppercase">Courses</a>
               <p>
                 Analytics, Content Marketing, Mobile Marketing
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Thesis -->
-    <div id="thesis" class="flex"> <!-- Full width -->
-      <div class="flex content-container direction-column"> <!-- Container width -->
-        <h1>Thesis Exhibit</h1>
-        <div class="flex"> <!-- Content -->
-          <article class="flex direction-column width-60"> <!-- Left column -->
-            <video src="resources/videos/thesis.mp4" controls class="img-fullwidth">This video cannot
+    <section id="thesis" class="flex">
+      <div class="flex container column">
+        <h1>Thesis exhibit</h1>
+        <div class="flex">
+          <div class="flex column"> <!-- Left column -->
+            <video controls src="resources/videos/thesis.mp4">This video cannot
               play on your device.</video>
             <h2>Reimagine urban</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+              nunc ac purus aliquet tincidunt in id erat. Nulla facilisi. Maecenas
+              aliquam auctor odio.
             </p>
-          </article>
-          <aside class="flex direction-column"> <!-- Right column -->
-            <figure class="flex items-center border-rounded bg-blue">
-              <img src="resources/images/thesis-fisma.jpg" class="border-rounded img-cover">
-              <div class="flex direction-column">
+          </div>
+          <aside class="flex column"> <!-- Right column -->
+            <figure class="flex align-center bg-pale rounded">
+              <img src="resources/images/thesis-fisma.jpg" class="rounded" alt="Fisma">
+              <figcaption class="flex column">
                 <h2>Fisma: Design &amp; Prototype</h2>
                 <p>Designer showcase of new prototype product</p>
-              </div>
+              </figcaption>
             </figure>
-            <figure class="flex items-center">
-              <img src="resources/images/thesis-now-and-then.jpg" class="border-rounded img-cover">
-              <div class="flex direction-column">
-                <h2>Now &amp; then</h2>
+            <figure class="flex align-center">
+              <img src="resources/images/thesis-now-and-then.jpg" class="rounded"
+              alt="Now and then">
+              <figcaption class="flex column">
+                <h2>Now &amp; Then</h2>
                 <p>Research study about New York</p>
-              </div>
+              </figcaption>
             </figure>
           </aside>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="flex">
-      <div class="flex content-container justify-between">
-        <p>&copy; Colmar Academy. All rights reserved</p>
-        <div class="flex">
+      <div class="flex container justify-between">
+        <p class="small uppercase">&copy; 2017 Colmar Academy, All rights reserved</p>
+        <nav class="flex">
           <a>Terms</a>
           <a>Privacy</a>
-        </div>
+        </nav>
       </div>
     </footer>
 
