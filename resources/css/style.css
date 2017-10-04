@@ -36,7 +36,7 @@ a:hover {
   transition: color 200ms linear;
 }
 
-.mobile {
+.mobile, nav.mobile {
   display: none;
 }
 
@@ -326,7 +326,18 @@ footer a{
 
   #info aside {
     max-width: 100%;
-    margin-left: 0;
+    margin: 0;
+  }
+
+  #info figcaption {
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 48px;
+  }
+
+  #info figcaption:last-child {
+    margin-bottom: 32px;
   }
 
   #info figure {
@@ -352,17 +363,16 @@ footer a{
     width: 100%;
   }
 
+  #courses h1 {
+    margin-bottom: 8px;
+  }
+
   #courses figure {
     width: 100%;
     margin: 4px 0;
   }
 
-  #thesis div.container, #thesis .container {
-    padding: 0;
-    margin: 0;
-  }
-
-  #thesis .container .flex {
+  #thesis div.container {
     padding: 0;
     margin: 0;
   }
@@ -370,6 +380,19 @@ footer a{
   video {
     width: 100%;
     margin: 0;
+  }
+
+  #thesis div.flex div.flex.column {
+    max-width: 100%;
+  }
+
+  #thesis h1 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  #thesis .container div.flex {
+    padding: 0;
   }
 
 }
