@@ -1,3 +1,9 @@
+/* I am sure I could refactor this into a shorter file; however, I'm running
+   out of time to complete the course & receive my certificate, so I'm unfortunately
+   going to skip this step with the intent to come back after the course is
+   complete and do my due diligence. I would love suggestions on how I could better
+   organize this file. It feels bloated to me, but maybe it's not so bad? */
+
 /* ---------- Global ---------- */
 
 body {
@@ -137,116 +143,97 @@ header .btn {
   padding: 8px 16px;
 }
 
-#banner {
+.banner {
   margin-top: 64px;
 }
 
-#banner .container {
+.banner .container, .info div.container, .thesis div.container {
   padding: 32px 24px;
 }
 
-#banner img {
-  max-width: 60%;
-  margin-right: 24px;
-}
-
-#banner h1, #banner p {
+.banner h1, .banner p {
   margin-bottom: 24px;
 }
 
-#banner a {
+.banner a {
   padding: 8px;
 }
 
-#info div.container, #thesis div.container {
-  padding: 32px 24px;
-}
-
-#info div.column {
+.info div.column, .banner img, .thesis .container div.flex.column {
   max-width: 60%;
 }
 
-#info div.column img {
+.banner .column, .info aside, .thesis aside {
+  margin-left: 24px;
+}
+
+.info div.column img, video, .courses figure img {
   width: 100%;
   height: auto;
 }
 
-#info div.column h1 {
+.info div.column h1 {
   margin: 32px 0 24px 0;
 }
 
-#info div.column p:last-child {
+.info div.column p:last-child {
   font-family: 'PT Serif', Georgia, serif;
   font-style: italic;
   margin: 24px 0 0 0;
 }
 
-#info aside, #thesis aside {
-  margin-left: 24px;
-}
-
-#info figure, #thesis figure {
+.info figure, .thesis figure {
   padding: 16px;
 }
 
-#info aside figure img, #thesis aside figure img {
+.info aside figure img, .thesis aside figure img {
   max-width: 35%;
   height: auto;
   margin-right: 16px;
 }
 
-#info aside figure:first-child {
+.info aside figure:first-child {
   padding-top: 0;
 }
 
-#info aside figcaption p, #courses figure a, #thesis aside figcaption p {
+.info aside figcaption p, .courses figure a, .thesis aside figcaption p {
   margin: 8px 0;
 }
 
-#info aside figcaption .btn {
+.info aside figcaption .btn {
   padding: 8px 16px;
   margin: 0 auto 0 0;
 }
 
-#courses .container {
+.courses .container {
   padding: 32px 54px;
 }
 
-#courses h1 {
+.courses h1 {
   margin-bottom: 16px;
 }
 
-#thesis h1 {
+.thesis h1 {
   margin-bottom: 32px;
   text-align: center;
 }
 
-#courses figure {
+.courses figure {
   margin: 16px;
   width: 33%;
 }
 
-#courses figure img {
-  width: 100%;
-  height: auto;
+.courses figure img {
   background-size: cover;
+  border-radius: 3px 3px 0 0;
 }
 
-#courses figcaption {
+.courses figcaption {
   padding: 16px 16px 24px 16px;
 }
 
-#thesis .container div.flex.column {
-  max-width: 60%;
-}
-
-#thesis div.column div.column h2 {
+.thesis div.column div.column h2 {
   margin: 24px 0 8px 0;
-}
-
-video {
-  width: 100%;
-  height: auto;
 }
 
 footer {
@@ -263,14 +250,14 @@ footer a{
 
 @media only screen and (max-width: 800px) {
 
-  #banner .container, #thesis .container div.flex {
+  .banner .container, .thesis .container div.flex {
     flex-direction: column;
     text-align: center;
     padding: 0 0 32px 0;
     align-items: center;
   }
 
-  #banner img {
+  .banner img {
     max-width: 100%;
     margin: 0 0 24px 0;
     border-radius: 0;
@@ -281,21 +268,21 @@ footer a{
     align-items: center;
   }
 
-  #info div.flex div.flex.column, #thesis div.flex div.flex.column {
+  .info div.flex div.flex.column, .thesis div.flex div.flex.column {
     max-width: 80%;
     margin-bottom: 32px;
   }
 
-  #info aside, #thesis aside {
+  .info aside, .thesis aside {
     max-width: 66%;
     margin-left: 0;
   }
 
-  #courses .small, #courses p {
+  .courses .small, .courses p {
     display: none;
   }
 
-  #thesis aside {
+  .thesis aside {
     text-align: left;
   }
 
@@ -303,15 +290,15 @@ footer a{
 
 @media only screen and (max-width: 675px) {
 
-  .desktop, #courses img, #courses a {
+  .desktop, .courses img, .courses a {
     display: none;
   }
 
-  #banner h1, #banner p {
+  .banner h1, .banner p {
     text-align: left;
   }
 
-  #info .bg-pale {
+  .info .bg-pale {
     background-color: white;
   }
 
@@ -319,60 +306,60 @@ footer a{
     display: flex;
   }
 
-  #banner div.column, #info .container, #courses .container {
+  .banner div.column, .info .container, .courses .container {
     padding: 16px;
     max-width: 100%;
   }
 
-  #info aside {
+  .info aside {
     max-width: 100%;
     margin: 0;
   }
 
-  #info figcaption {
+  .info figcaption {
     width: 100%;
     margin-top: 24px;
     margin-left: 16px;
     margin-bottom: 48px;
   }
 
-  #info figcaption:last-child {
+  .info figcaption:last-child {
     margin-bottom: 32px;
   }
 
-  #info figure {
+  .info figure {
     flex-direction: column;
     max-width: 100%;
     padding: 0;
   }
 
-  #info aside figure img.mobile {
+  .info aside figure img.mobile {
     display: flex;
     max-width: 100%;
     height: auto;
     margin: 0;
   }
 
-  #info div.container {
+  .info div.container {
     padding: 16px;
     margin: 0;
   }
 
-  #courses div.justify-between {
+  .courses div.justify-between {
     flex-direction: column;
     width: 100%;
   }
 
-  #courses h1 {
+  .courses h1 {
     margin-bottom: 8px;
   }
 
-  #courses figure {
+  .courses figure {
     width: 100%;
     margin: 4px 0;
   }
 
-  #thesis div.container {
+  .thesis div.container {
     padding: 0;
     margin: 0;
   }
@@ -382,16 +369,16 @@ footer a{
     margin: 0;
   }
 
-  #thesis div.flex div.flex.column {
+  .thesis div.flex div.flex.column {
     max-width: 100%;
   }
 
-  #thesis h1 {
+  .thesis h1 {
     margin-top: 32px;
     margin-bottom: 16px;
   }
 
-  #thesis .container div.flex {
+  .thesis .container div.flex {
     padding: 0;
   }
 
