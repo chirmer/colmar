@@ -18,7 +18,8 @@ h1, h2, h3, header p {
 
 h1 {
   font-size: 2.25em;
-  line-height: 1.25em;
+  line-height: 1.25em; /* Nothing I try lets this work except when broken out into
+                          each element. Is there a way to combine this? */
 }
 
 h2 {
@@ -43,7 +44,9 @@ a:hover {
 }
 
 .mobile, nav.mobile {
-  display: none;
+  display: none; /* For some reason, if I don't specify nav.mobile, the mobile
+                    menu shows in Chrome for Mac on GitHub only. Not when linked
+                    as a local file, and not on Windows; just Mac via GitHub Pages. */
 }
 
 .small {
@@ -311,7 +314,7 @@ footer a{
     max-width: 100%;
   }
 
-  .info aside {
+  .info aside, .info aside figure img.mobile {
     max-width: 100%;
     margin: 0;
   }
@@ -335,9 +338,7 @@ footer a{
 
   .info aside figure img.mobile {
     display: flex;
-    max-width: 100%;
     height: auto;
-    margin: 0;
   }
 
   .info div.container {
